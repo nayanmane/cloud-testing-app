@@ -7,6 +7,6 @@ const Router = require("./Routes/IndexRouter");
 app.use(express.static(path.join(__dirname)));
 app.use("/api", Router);
 
-var port = process.env.PORT || 8090;
+var port = process.env.APP_PORT || 8090;
 app.listen(port);
 console.log("Order API is runnning at " + port);
